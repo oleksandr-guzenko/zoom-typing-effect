@@ -4,7 +4,8 @@ let speed = 60; /* The speed/duration of the effect in milliseconds */
 let fontSize = 10;
 let scale = 100;
 const el = document.getElementsByClassName("loader")[0];
-const noise = $('body');
+const body = $('body');
+const noise = $('.noise')[0];
 
 $(window).on('load', addNoise);
 // setTimeout(() => {
@@ -21,7 +22,8 @@ function typeWriter() {
     if (i < txt.length) {
         el.innerHTML += txt.charAt(i);
         el.style.fontSize = fontSize + 'vw';
-        $(noise).css({backgroundSize: `${scale}% ${scale}%`});
+        $(body).css({backgroundSize: `${scale}% ${scale}%`});
+        $(noise).css({});
 
         i++;
         speed += 10;
@@ -31,3 +33,7 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
     }
+
+// function noise() {
+
+// }

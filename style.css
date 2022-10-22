@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
  body {
 	 font-family: 'Archivo Black', sans-serif;
-	 background-image: url('./back.jpg');
+	 background: url('./back.jpg');
 	 background-size: 100% 100%;
 	 background-position: center;
 	 color: #fff;
@@ -42,9 +42,8 @@
 	 right: -500px;
 	 bottom: -500px;
 	 left: -500px;
-	 background: transparent url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1) 0 0;
-	 background-size: 100% 100%;
-	 background-position: center;
+	 background: transparent url('noise.png') 0 0;
+	 background-size: 100px 100px;
 	 opacity: .35;
 	 animation: noise 1s steps(8,end) infinite both;
 }
@@ -53,25 +52,25 @@
 		 transform: translateX(0px,0px);
 	}
 	 10% {
-		 transform: translate(-100px,100px);
+		 transform: translate(-50px,50px);
 	}
 	 20% {
-		 transform: translate(150px,-100px);
+		 transform: translate(75px,-50px);
 	}
 	 30% {
-		 transform: translate(-100px,100px);
+		 transform: translate(-50px,50px);
 	}
 	 40% {
-		 transform: translate(100px,-150px);
+		 transform: translate(50px,-75px);
 	}
 	 50% {
-		 transform: translate(-100px,200px);
+		 transform: translate(-50px,100px);
 	}
 	 60% {
-		 transform: translate(-200px,-100px);
+		 transform: translate(-100px,-50px);
 	}
 	 70% {
-		 transform: translateY(50px,100px);
+		 transform: translateY(20px,50px);
 	}
 	 80% {
 		 transform: translate(100px,-150px);
