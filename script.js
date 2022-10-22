@@ -6,10 +6,10 @@ let scale = 100;
 const el = document.getElementsByClassName("loader")[0];
 const noise = $('body');
 
-// $(window).on('load', addNoise);
-setTimeout(() => {
-  addNoise();
-}, 1000);
+$(window).on('load', addNoise);
+// setTimeout(() => {
+//   addNoise();
+// }, 1000);
 function addNoise() {
   $('.loader').text('');
   $('.noise-wrapper').css('opacity',1);
