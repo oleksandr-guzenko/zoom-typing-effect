@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
  body {
 	 font-family: 'Archivo Black', sans-serif;
-	 background-color: #2c2c2c;
-	 background: radial-gradient(ellipse at center,#29382c 0%,#0c100d 100%);
+	 background-image: url('./back.jpg');
+	 background-size: 100% 100%;
+	 background-position: center;
 	 color: #fff;
 }
  html, body {
@@ -34,15 +35,7 @@
 	 overflow: hidden;
 	 z-index: 10;
 }
- .noise-wrapper:after {
-	 content: '';
-	 position: absolute;
-	 top: 0;
-	 right: 0;
-	 bottom: 0;
-	 left: 0;
-	 background: radial-gradient(ellipse at center,rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
-}
+
  .noise {
 	 position: absolute;
 	 top: -500px;
@@ -50,7 +43,8 @@
 	 bottom: -500px;
 	 left: -500px;
 	 background: transparent url(https://www.dropbox.com/s/h7ab1c82ctzy83n/noise.png?raw=1) 0 0;
-	 background-size: 320px 320px;
+	 background-size: 100% 100%;
+	 background-position: center;
 	 opacity: .35;
 	 animation: noise 1s steps(8,end) infinite both;
 }
