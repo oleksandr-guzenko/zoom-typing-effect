@@ -9,34 +9,22 @@
  html, body {
 	 height: 100%;
 }
- .main-wrapper {
-	 position: relative;
-	 padding: 0;
-	 min-height: 100%;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-}
- .loader {
-	 position: relative;
+
+#loader {
 	 font-size: 10vw;
-	 text-align: center;
-	 margin: 0;
-	 padding: 0;
 	 z-index: 1;
 }
- .noise-wrapper {
+
+#noise-wrapper {
 	 position: absolute;
 	 left: 0;
 	 top: 0;
-	 width: 100%;
-	 height: 100%;
 	 opacity: 0;
 	 overflow: hidden;
 	 z-index: 10;
 }
 
- .noise {
+#noise {
 	 position: absolute;
 	 top: -500px;
 	 right: -500px;
